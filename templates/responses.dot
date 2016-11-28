@@ -1,5 +1,11 @@
 ### Responses
 
+{{~ data.responses :r}}
+```json
+{{=r.examples['application/json; charset=utf-8']}}
+```
+{{~}}
+
 Status|Meaning|Description
 ---|---|---|
 {{~ data.responses :r}}{{=r.status}}|{{=r.meaning}}|{{=r.description}}
